@@ -1,0 +1,16 @@
+body {
+  margin: 20px 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header_link {
+  gap: 50px;
+  display: flex;
+}
+.header_link a {
+  color: #FF6060;
+}/*# sourceMappingURL=Header.css.map */

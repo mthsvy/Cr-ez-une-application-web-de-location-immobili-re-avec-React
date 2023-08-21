@@ -8,8 +8,10 @@ import Error404 from "./pages/Error404";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { createGlobalStyle } from "styled-components";
-const LayoutStyle = createGlobalStyle`body {color: #FF6060;}
-`;
+import "./styles/global.scss";
+
+const LayoutStyle = createGlobalStyle``;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

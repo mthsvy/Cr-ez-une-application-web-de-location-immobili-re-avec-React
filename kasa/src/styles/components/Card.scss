@@ -1,0 +1,41 @@
+@import "../variable";
+
+.card {
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(white,black);
+    position: relative;
+    img {
+        opacity: 0.5;
+        height: 340px;
+        margin: 0;
+        border-radius: 10px;
+    }
+    span {
+        position: absolute;
+        top: 268px;
+        left: 20px;
+        color: white;
+        width: 40%;
+    }
+}
+
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .card {
+        height: 255px;
+        width: 100%;
+        img {
+            height: 255px;
+        }
+        span {
+            top: 188px;
+            left: 20px;
+            width: 30%;
+        }
+    }
+
+    
+} 

@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 80px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  border-radius: 25px;
+  background: #f6f6f6;
+  margin-top: 40px;
+  padding: 40px 0 40px 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery {
+    flex-wrap: nowrap;
+    display: flex;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+  }
+}/*# sourceMappingURL=Home.css.map */

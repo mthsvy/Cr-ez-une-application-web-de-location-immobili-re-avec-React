@@ -25,12 +25,12 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header img {
-    width: 145px;
-    height: 46.88px;
+    width: 120px;
+    height: auto;
   }
   .header_link {
     font-size: 12px;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 }
 body {
@@ -45,6 +45,6 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .main_body {
-    margin: 25px 10px;
+    margin: 15px;
   }
 }/*# sourceMappingURL=global.css.map */

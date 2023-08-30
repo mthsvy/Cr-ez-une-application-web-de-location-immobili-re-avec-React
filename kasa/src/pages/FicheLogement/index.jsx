@@ -1,5 +1,10 @@
+import Carousel from "../../components/Carousel";
 function FicheLogement() {
-  return <div>Fiche de logement</div>;
+  return (
+    <div>
+      <Carousel />
+    </div>
+  );
 }
 
 export default FicheLogement;

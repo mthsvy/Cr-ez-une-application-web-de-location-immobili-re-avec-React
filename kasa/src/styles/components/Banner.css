@@ -1,16 +1,32 @@
-section img {
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  position: relative;
   width: 100%;
   border-radius: 25px;
   height: 223px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 20px 0px;
+  filter: brightness(75%);
+}
+.banner span {
+  position: absolute;
+  color: white;
+  top: 35%;
+  font-size: 48px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  section img {
+  .banner img {
     border-radius: 10px;
     margin: 0;
     height: 111px;
+  }
+  .banner span {
+    font-size: 24px;
+    left: 20px;
   }
 }/*# sourceMappingURL=Banner.css.map */

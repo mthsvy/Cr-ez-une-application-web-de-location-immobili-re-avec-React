@@ -7,7 +7,11 @@ function Home() {
   return (
     <div>
       <section>
-        <Banner img={img_1} alt="Paysage de Rocher" />
+        <Banner
+          img={img_1}
+          alt="Paysage de Rocher"
+          title="Chez vous, partout et ailleurs"
+        />
       </section>
       <section className="gallery">
         <Card />

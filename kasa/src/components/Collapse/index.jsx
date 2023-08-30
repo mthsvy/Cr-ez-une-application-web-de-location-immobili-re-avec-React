@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../../styles/components/Animation_apropos.scss";
+import "../../styles/components/Animation_collapse.scss";
 
-function Animation_a_propos({ label, description }) {
+function Collapse({ label, description }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
@@ -31,4 +31,4 @@ function Animation_a_propos({ label, description }) {
   );
 }
 
-export default Animation_a_propos;
+export default Collapse;

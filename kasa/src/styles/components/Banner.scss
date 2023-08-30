@@ -1,17 +1,36 @@
-section img {
+.banner
+{
+    width: 100%;
+    position: relative;
+
+img {
+    position: relative;
     width: 100%;
     border-radius: 25px;
     height: 223px;
     object-fit: cover;  
     margin: 20px 0px;
+    filter: brightness(75%);
+
 }
+span {
+    position: absolute;
+    color: white;
+    top: 35%;
+    font-size: 48px;
+}
+} 
 
 @media (min-width:320px) and (max-width:767px){
-    section {
+    .banner {
         img {
             border-radius: 10px;
             margin: 0;
             height: 111px;
+        }
+        span {
+            font-size: 24px;
+            left: 20px;         
         }
     }
 }

@@ -25,7 +25,7 @@ function Carousel() {
   };
 
   return (
-    <div className="carousel-container main_body">
+    <div className="carousel-container">
       <img className="banner_img" src={pictures[currentIndex]} alt="Slide" />
       <div className="arrows">
         <img
@@ -40,6 +40,9 @@ function Carousel() {
           className="arrow arrow-right"
           onClick={() => handleArrowClick(1)}
         />
+      </div>
+      <div className="pictures_numbers">
+        <p>{`${currentIndex + 1} / ${pictures.length}`}</p>
       </div>
     </div>
   );

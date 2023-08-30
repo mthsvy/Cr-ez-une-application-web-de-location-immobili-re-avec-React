@@ -4,18 +4,19 @@
 
 article {
     width: 85%;
-    background: $kasa_pink;    
     border-radius: 5px;
     margin: 20px;
     .arrow {
-        transition: transform 0.3s ease;        
-      }
-      .arrow.open {
-        transform: rotate(180deg);
-      }
+        transition: transform 0.3s ease;     
+        &.open {
+            transform: rotate(180deg);
+          }   
+      }      
 
     .item {
         color: white;
+        background: $kasa_pink;    
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -40,7 +41,7 @@ article {
         overflow: hidden;
         transition: max-height 0.5s ease-in-out;  
         &.open {
-        max-height: 1000px; /* Ajustez cette valeur en fonction de la hauteur réelle du contenu */
+        max-height: 1000px; 
         overflow: visible;
         transition: max-height 0.5s ease-in-out;
         }

@@ -1,0 +1,99 @@
+@import "../variable";
+
+.collapses {
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    article {
+        margin: 0;        
+    }
+}
+
+ul { display: flex;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding: 0;
+    gap: 10px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+    li {
+        background: $kasa_pink;
+        width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .commercial {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            p {
+                margin: 0;
+            }
+        }
+
+        .circle {
+            svg {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .detail {
+        flex-direction: column;
+    
+    .commercial_and_rating {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        .commercial {
+            align-items: center;
+            font-size: 12px;
+            .circle {
+                display: flex;
+                align-items: center;
+               svg {
+                width: 32px;
+                height: auto;
+               }
+        }
+        }
+    }
+}
+
+ul li {
+    width: 84px;
+    height: auto;
+    font-size: 10px;
+}
+
+   .collapses {
+    flex-direction: column;
+    gap: 20px;
+   }
+   
+}

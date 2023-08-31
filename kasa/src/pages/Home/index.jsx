@@ -2,10 +2,11 @@ import img_1 from "../../assets/Image source 1.png";
 import "../../styles/Pages/Home.scss";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import logements from "../../data/logements.json";
 
 function Home() {
   return (
-    <div>
+    <div className="main_body">
       <section>
         <Banner
           img={img_1}
@@ -14,12 +15,14 @@ function Home() {
         />
       </section>
       <section className="gallery">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {logements.map((logement, index) => (
+          <Card
+            key={index}
+            cover={logement.cover}
+            title={logement.title}
+            logement={index}
+          />
+        ))}
       </section>
     </div>
   );

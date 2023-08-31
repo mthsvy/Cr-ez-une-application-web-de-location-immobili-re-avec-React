@@ -7,7 +7,7 @@ function Collapse({ label, description }) {
     setIsOpen(!isOpen);
   };
   return (
-    <article>
+    <article className="article">
       <span className="item">
         <p>{label}</p>
         <p>

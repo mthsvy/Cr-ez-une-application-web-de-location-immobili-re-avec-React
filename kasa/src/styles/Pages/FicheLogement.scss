@@ -38,14 +38,14 @@ ul { display: flex;
     .commercial {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content:flex-end;
         gap: 10px;
         margin-bottom: 15px;
 
         .info {
             display: flex;
             flex-direction: column;
-            align-items: end;
+            align-items:flex-end;
             p {
                 margin: 0;
             }
@@ -67,7 +67,7 @@ ul { display: flex;
     .commercial_and_rating {
         display: flex;
         flex-direction: row-reverse;
-        align-items: start;
+        align-items:flex-start;
         width: 100%;
         justify-content: space-between;
         .commercial {

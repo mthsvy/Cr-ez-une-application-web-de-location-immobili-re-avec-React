@@ -5,7 +5,7 @@ import Banner from "../../components/Banner";
 
 function Collapse() {
   return (
-    <section>
+    <section className="section main_body">
       <Banner img={img_2} alt="Paysage de Montagne" />
       <AnimationCollapse
         label="Flabilité"

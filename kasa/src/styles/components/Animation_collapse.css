@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-article {
+.article {
   width: 85%;
   border-radius: 5px;
-  margin: 20px;
+  margin-bottom: 30px;
 }
-article .arrow {
+.article .arrow {
   transition: transform 0.3s ease;
 }
-article .arrow.open {
+.article .arrow.open {
   transform: rotate(180deg);
 }
-article .item {
+.article .item {
   color: white;
   background: #FF6060;
   display: flex;
@@ -21,53 +21,47 @@ article .item {
   height: 3.5rem;
   border-radius: 5px;
 }
-article .item p {
+.article .item p {
   font-size: 1.5rem;
   font-weight: 600;
 }
-article .item span {
+.article .item span {
   font-size: 3.5rem;
   cursor: pointer;
 }
-article .description {
+.article .description {
   background-color: ghostwhite;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 10px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
-article .description.open {
+.article .description.open {
   max-height: 1000px;
   overflow: visible;
   transition: max-height 0.5s ease-in-out;
 }
-article .description span {
+.article .description span {
   color: #FF6060;
   line-height: 2;
   font-size: 19px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  section {
-    margin: 15px 15px 5px 15px;
-  }
-  section img {
-    margin-bottom: 15px;
-  }
-  article {
+  .article {
     width: 100%;
     margin: 10px 20px;
   }
-  article .item {
+  .article .item {
     height: 30px;
   }
-  article .item p {
+  .article .item p {
     font-size: 13px;
   }
-  article .item span {
+  .article .item span {
     font-size: 2em;
   }
-  article .description span {
+  .article .description span {
     font-size: 10px;
   }
 }/*# sourceMappingURL=Animation_collapse.css.map */

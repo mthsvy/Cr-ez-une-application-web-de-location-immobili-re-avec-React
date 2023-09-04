@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
 }
 
 .main_body {
-  margin: 25px 80px;
+  margin: 25px 6vw;
+  flex: 1; /* Permet au contenu principal de pousser le footer vers le haut */
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

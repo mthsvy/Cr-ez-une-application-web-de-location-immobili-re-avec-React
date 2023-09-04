@@ -27,9 +27,7 @@ function FicheLogement() {
               <p>{logement.host.name}</p>
             </div>
             <div className="circle">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="32" fill="#c4c4c4" />
-              </svg>
+              <img src={logement.host.picture} alt={logement.host.name} />
             </div>
           </div>
           <Rating value={logement.rating} max="5" />
@@ -37,7 +35,12 @@ function FicheLogement() {
       </div>
       <div className="collapses">
         <Collapse label="Description" description={logement.description} />
-        <Collapse label="Equipements" description={logement.equipments} />
+        <Collapse
+          label="Equipements"
+          description={logement.equipments.map((equipment) => (
+            <p key={equipment}>{equipment}</p>
+          ))}
+        />
       </div>
     </div>
   );

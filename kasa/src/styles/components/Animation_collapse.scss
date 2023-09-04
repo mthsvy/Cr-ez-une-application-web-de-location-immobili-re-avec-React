@@ -1,81 +1,90 @@
 @import "../variable";
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-
 .article {
     width: 85%;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 15px;
+  
     .arrow {
-        transition: transform 0.3s ease;     
-        &.open {
-            transform: rotate(180deg);
-          }   
-      }      
-
+      transition: transform 0.3s ease;
+      font-size: 30px;
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  
     .item {
-        color: white;
-        background: $kasa_pink;    
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px 0 10px;
-        height: 3.5rem;
-        border-radius: 5px;
-        p {            
+      color: white;
+      background: $kasa_pink;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px 0 10px;
+      height: 3.5rem;
+      border-radius: 5px;
+  
+      p {
         font-size: 1.5rem;
         font-weight: 600;
-        }
-        span {
-            font-size: 3.5rem;
-            cursor: pointer;
-        }        
-
-    } 
-    .description {
-        background-color: ghostwhite;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        padding: 10px;
-        overflow: hidden;
-        transition: max-height 0.5s ease-in-out;  
-        &.open {
-        max-height: 1000px; 
-        overflow: visible;
-        transition: max-height 0.5s ease-in-out;
-        }
-
-        span {
-            color: $kasa_pink;
-            line-height: 2;   
-            font-size: 19px;
-        }
+      }
+  
+      span {
+        font-size: 3.5rem;
+        cursor: pointer;
+      }
     }
-}
-
-@media (min-width:320px) and (max-width:767px){    
-
+  
+    .description {
+      background-color: ghostwhite;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 800ms ease-in-out;
+      span {
+        color: $kasa_pink;
+        font-size: 19px;
+        padding: 1em;
+        display: inline-block;
+      }
+    }
+  
+    &.open {
+      .description {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out; /* Ajustez la durée ici à 1 seconde */
+      }
+    }
+  }
+  
+  .material-symbols-outlined {
+    font-size: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
     .article {
-    width: 100%;
-    margin: 10px 20px;
-    .item {
+      width: 100%;
+      margin: 10px 20px 0px 20px;
+  
+      .item {
         height: 30px;
+  
         p {
-        font-size: 13px;
+          font-size: 13px;
         }
+  
         span {
-            font-size: 2em;
+          font-size: 2em;
         }
-    }
-    .description {
+      }
+  
+      .description {
         span {
-        font-size: 10px;
+          font-size: 10px;
         }
+      }
     }
-    
-    }
-    
-}
-
-
+  }
+  
+  

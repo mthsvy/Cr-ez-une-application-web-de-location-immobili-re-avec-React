@@ -33,7 +33,7 @@ function Error404() {
     <div className="error404">
       <span>404</span>
       {sorry}
-      <Link path="/">Retourner sur la page d’accueil</Link>
+      <Link to="/">Retourner sur la page d’accueil</Link>
     </div>
   );
 }

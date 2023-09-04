@@ -29,4 +29,9 @@
     font-size: 24px;
     left: 20px;
   }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner span {
+    left: 20px;
+  }
 }/*# sourceMappingURL=Banner.css.map */

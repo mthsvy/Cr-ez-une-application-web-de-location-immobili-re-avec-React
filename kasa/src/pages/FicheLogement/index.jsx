@@ -2,10 +2,13 @@ import Carousel from "../../components/Carousel";
 import Collapse from "../../components/Collapse";
 import "../../styles/Pages/FicheLogement.scss";
 import Rating from "../../components/Rating";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 function FicheLogement() {
   const params = useParams();
+  if (!logements[params.id]) {
+    return <Navigate to="/not-found" />;
+  }
   const logement = logements[params.id];
 
   return (

@@ -13,7 +13,6 @@
         border-radius: 10px;
         width: 100%;
         object-fit: cover;
-        max-width: 60vw;
 
     }
     img:hover {
@@ -47,3 +46,13 @@
 
     
 } 
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .card {
+        height: 300px;
+        img {
+            height: 300px;
+        }
+    }
+}

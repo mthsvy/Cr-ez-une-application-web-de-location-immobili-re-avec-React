@@ -12,7 +12,7 @@ function FicheLogement() {
   const logement = logements[params.id];
 
   return (
-    <div className="main_body">
+    <div className="fiche_logement main_body">
       <Carousel pictures={logement.pictures} />
       <div className="detail">
         <div>

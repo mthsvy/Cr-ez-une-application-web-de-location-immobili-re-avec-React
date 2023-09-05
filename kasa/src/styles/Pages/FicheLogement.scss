@@ -1,5 +1,10 @@
 @import "../variable";
 
+.fiche_logement {
+    min-height: calc(100vh - 209px); /* Réduire la hauteur du footer */
+    margin-bottom: 209px; /* Ajouter une marge en bas équivalente à la hauteur du footer */
+}
+
 .collapses {
     display: flex;
     flex-direction: row;

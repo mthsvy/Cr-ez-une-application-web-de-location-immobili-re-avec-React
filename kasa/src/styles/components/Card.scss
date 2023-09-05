@@ -13,7 +13,6 @@
         border-radius: 10px;
         width: 100%;
         object-fit: cover;
-
     }
     img:hover {
         opacity: 0.8;
@@ -21,7 +20,7 @@
     }
     span {
         position: absolute;
-        top: 80%;
+        bottom: 5%;
         left: 20px;
         color: white;
         width: 70%;

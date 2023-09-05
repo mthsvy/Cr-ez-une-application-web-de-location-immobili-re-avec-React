@@ -19,7 +19,7 @@
 }
 .card span {
   position: absolute;
-  top: 80%;
+  bottom: 5%;
   left: 20px;
   color: white;
   width: 70%;

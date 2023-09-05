@@ -1,6 +1,6 @@
 import Carousel from "../../components/Carousel";
 import Collapse from "../../components/Collapse";
-import "../../styles/Pages/FicheLogement.scss";
+import "./FicheLogement.scss";
 import Rating from "../../components/Rating";
 import { Navigate, useParams } from "react-router-dom";
 import logements from "../../data/logements.json";

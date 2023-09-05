@@ -1,4 +1,4 @@
-import "../../styles/Pages/APropos.scss";
+import "./APropos.scss";
 import img_2 from "../../assets/Image source 2.png";
 import AnimationCollapse from "../../components/Collapse";
 import Banner from "../../components/Banner";

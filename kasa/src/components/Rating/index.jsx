@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import "../../styles/components/Rating.scss";
+import "./Rating.scss";
+
 function Rating({ value, max }) {
   return (
     <div className="rating">

@@ -1,5 +1,5 @@
 import img_1 from "../../assets/Image source 1.png";
-import "../../styles/Pages/Home.scss";
+import "./Home.scss";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import logements from "../../data/logements.json";

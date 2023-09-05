@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/components/Carousel.scss";
+import "./Carousel.scss";
 import arrow_left from "../../assets/arrow_left.png";
 import arrow_right from "../../assets/arrow_right.png";
 

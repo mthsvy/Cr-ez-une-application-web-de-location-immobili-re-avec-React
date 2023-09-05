@@ -1,6 +1,6 @@
 import logoKasa from "../../assets/LOGO.png";
 import { Link } from "react-router-dom";
-import "../../styles/components/Header.scss";
+import "./Header.scss";
 import { useState, useEffect } from "react";
 
 function Header() {

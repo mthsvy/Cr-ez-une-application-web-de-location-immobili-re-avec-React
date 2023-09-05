@@ -1,5 +1,5 @@
 import logoKasa from "../../assets/LOGO.png";
-import "../../styles/components/Footer.scss";
+import "./Footer.scss";
 import { useState, useEffect } from "react";
 
 function Footer() {

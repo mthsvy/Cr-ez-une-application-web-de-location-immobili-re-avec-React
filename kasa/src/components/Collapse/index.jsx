@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../styles/components/Animation_collapse.scss";
+import "./Animation_collapse.scss";
 
 function Collapse({ label, description }) {
   const [isOpen, setIsOpen] = useState(false);

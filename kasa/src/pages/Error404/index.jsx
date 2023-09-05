@@ -1,4 +1,4 @@
-import "../../styles/Pages/Error404.scss";
+import "./Error404.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 

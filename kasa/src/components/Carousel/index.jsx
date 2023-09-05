@@ -19,23 +19,29 @@ function Carousel({ pictures }) {
   return (
     <div className="carousel-container">
       <img className="banner_img" src={pictures[currentIndex]} alt="Slide" />
-      <div className="arrows">
-        <img
-          src={arrow_left}
-          alt="Left Arrow"
-          className="arrow arrow-left"
-          onClick={() => handleArrowClick(-1)}
-        />
-        <img
-          src={arrow_right}
-          alt="Right Arrow"
-          className="arrow arrow-right"
-          onClick={() => handleArrowClick(1)}
-        />
-      </div>
-      <div className="pictures_numbers">
-        <p>{`${currentIndex + 1} / ${pictures.length}`}</p>
-      </div>
+      {pictures.length > 1 ? (
+        <div>
+          <div className="arrows">
+            <img
+              src={arrow_left}
+              alt="Left Arrow"
+              className="arrow arrow-left"
+              onClick={() => handleArrowClick(-1)}
+            />
+            <img
+              src={arrow_right}
+              alt="Right Arrow"
+              className="arrow arrow-right"
+              onClick={() => handleArrowClick(1)}
+            />
+          </div>
+          <div className="pictures_numbers">
+            <p>{`${currentIndex + 1} / ${pictures.length}`}</p>
+          </div>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }

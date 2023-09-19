@@ -6,6 +6,10 @@
     height: 340px;
     background: linear-gradient(white,black);
     position: relative;
+    &:hover {
+        transform: scale(1.04);   
+        transition: transform 0.1s ease;    
+    }
     img {
         opacity: 0.5;
         height: 340px;
@@ -13,11 +17,11 @@
         border-radius: 10px;
         width: 100%;
         object-fit: cover;
+        &:hover {
+        opacity: 0.8;     
     }
-    img:hover {
-        opacity: 0.8;
-        
     }
+    
     span {
         position: absolute;
         bottom: 5%;

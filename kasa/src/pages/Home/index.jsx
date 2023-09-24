@@ -20,7 +20,7 @@ function Home() {
             key={index}
             cover={logement.cover}
             title={logement.title}
-            logement={index}
+            logement={logement.id}
           />
         ))}
       </section>

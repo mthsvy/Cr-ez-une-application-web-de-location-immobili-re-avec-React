@@ -8,10 +8,10 @@ import Tag from "../../components/Tag";
 import Avatar from "../../components/Avatar";
 function FicheLogement() {
   const params = useParams();
-  if (!logements[params.id]) {
+  const logement = logements.find((element) => element.id === params.id);
+  if (logement == null) {
     return <Navigate to="/not-found" />;
   }
-  const logement = logements[params.id];
   return (
     <div className="fiche_logement main_body">
       <Carousel pictures={logement.pictures} />

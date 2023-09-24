@@ -4,6 +4,7 @@ import "./FicheLogement.scss";
 import Rating from "../../components/Rating";
 import { Navigate, useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
+import Tag from "../../components/Tag";
 function FicheLogement() {
   const params = useParams();
   if (!logements[params.id]) {
@@ -19,7 +20,9 @@ function FicheLogement() {
           <p>{logement.location}</p>
           <ul>
             {logement.tags.map((tag) => (
-              <li key={tag}>{tag}</li>
+              <li key={tag}>
+                <Tag label={tag} />
+              </li>
             ))}
           </ul>
         </div>

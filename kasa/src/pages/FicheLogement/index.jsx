@@ -5,6 +5,7 @@ import Rating from "../../components/Rating";
 import { Navigate, useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Tag from "../../components/Tag";
+import Avatar from "../../components/Avatar";
 function FicheLogement() {
   const params = useParams();
   if (!logements[params.id]) {
@@ -27,14 +28,7 @@ function FicheLogement() {
           </ul>
         </div>
         <div className="commercial_and_rating">
-          <div className="commercial">
-            <div className="info">
-              <p>{logement.host.name}</p>
-            </div>
-            <div className="circle">
-              <img src={logement.host.picture} alt={logement.host.name} />
-            </div>
-          </div>
+          <Avatar name={logement.host.name} picture={logement.host.picture} />
           <Rating value={logement.rating} max="5" />
         </div>
       </div>

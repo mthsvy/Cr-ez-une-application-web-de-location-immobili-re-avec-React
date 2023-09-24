@@ -1,0 +1,48 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15%;
+    margin-bottom: 35px;
+    text-align: end;
+
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 55%;
+        p {
+            margin: 0;
+        }
+    }
+
+    .circle {
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+.avatar {
+    align-items: center;
+    font-size: 12px;
+
+    .circle {
+        display: flex;
+        align-items: center;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        svg {
+            width: 32px;
+            height: auto;
+        }
+    }
+}
+}
+

@@ -21,9 +21,9 @@ root.render(
       <LayoutStyle />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/a-propos" element={<APropos />} />
         <Route path="/fiche-de-logement/:id" element={<FicheLogement />} />
+        <Route path="/a-propos" element={<APropos />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

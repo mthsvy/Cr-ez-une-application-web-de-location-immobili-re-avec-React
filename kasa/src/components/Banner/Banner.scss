@@ -32,17 +32,15 @@ span {
         }
         span {
             font-size: 24px;           
-            width: 75%;                  
+            width: 217px;    
+            left: 20px;
+            top: 25%;
+            transform: translate(0.50%);              
         }
     }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-.banner {
-    span {
-        width: 80%;
-    }
-}}
+
 
 
 

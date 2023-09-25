@@ -2,18 +2,20 @@
 @import "../styles/variable";
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;      
     color: $kasa_pink;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+
 .main_body {
     margin: 25px 6vw;
-    flex: 1; 
 }
 
 @media (min-width:320px) and (max-width:767px) {

@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 function Card({ cover, title, logement }) {
   return (
-    <Link to={`/fiche-de-logement/${logement}`}>
-      <div className="card">
+    <article className="card">
+      <Link to={`/fiche-de-logement/${logement}`}>
         <img src={cover} alt="" />
         <span>{title}</span>
-      </div>
-    </Link>
+      </Link>
+    </article>
   );
 }
 

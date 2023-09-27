@@ -1,25 +1,30 @@
 @import "../../styles/variable";
 
 .card {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 340px;
-    height: 340px;
+    width: 21.25rem;
+    height: 21.25rem;
     background: linear-gradient(white,black);
     position: relative;
+
     &:hover {
         transform: scale(1.04);   
         transition: transform 0.1s ease;    
     }
     img {
         opacity: 0.5;
-        height: 340px;
+        height: 21.25rem;
         margin: 0;
         border-radius: 10px;
-        width: 340px;
+        width: 100%;
         object-fit: cover;
+
         &:hover {
-        opacity: 0.8;     
-    }
+            opacity: 0.8;     
+        }
     }
     
     span {
@@ -31,26 +36,22 @@
     }
 }
 
-@media (min-width:320px) and (max-width:767px) {
+@media (max-width:1024px) {
     .card {
-        height: 255px;
-        width: 100%;
-        img {
-            height: 255px;
-            width: 100%;
-        }
+        flex: 0 0 calc(50% - 20px); 
+        max-width: calc(50% - 20px)
     }
     
 } 
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (max-width: 600px) {
+    .card{    
+        flex: 0 0 100%; 
+        max-width: 100%;
+        height: 16rem;
 
-    .card {
-        height: 250px;
-        width: 250px;
         img {
-            height: 250px;
-            width: 250px;
+            height: 16rem;
         }
     }
 }

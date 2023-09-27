@@ -7,38 +7,23 @@ section {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 340px);    
-    place-items: center;
+    display: flex;
+    align-items: flex-start;
     border-radius: 25px;
     background: #f6f6f6;
-    margin-top: 40px;   
+    margin-top: 30px;
     padding: 40px;
-    grid-gap: 50px;
-    row-gap: 50px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
 }
 
-@media (min-width:320px) and (max-width:767px) {
-
+@media (max-width: 600px) {
     .gallery {
-        flex-wrap: nowrap;
-        display: flex;
-        margin-top:15px;
+        background: none;
         padding: 0;
-        background:none;
-        grid-gap: 20px;
-        row-gap: 20px;
     }
-
-
-} 
-
-    
-@media (min-width:768px) and (max-width:1023px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fill, 250px); 
-           
 }
-}
+
 

@@ -7,10 +7,8 @@ import FicheLogement from "./pages/FicheLogement";
 import Error404 from "./pages/Error404";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { createGlobalStyle } from "styled-components";
 import "./styles/global.scss";
 
-const LayoutStyle = createGlobalStyle``;
 document.title = "Kasa";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,7 +16,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <LayoutStyle />
       <Header />
       <Routes>
         <Route path="/fiche-de-logement/:id" element={<FicheLogement />} />

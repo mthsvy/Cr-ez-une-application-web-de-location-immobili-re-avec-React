@@ -29,7 +29,12 @@
 }
 
 @media (min-width: 320px) and (max-width:767px) {
-    .error404 {        
+    .error404 {   
+        justify-content: space-around;
+        height: 65vh;   
+        a {
+            margin-bottom: 4rem;
+        }   
         p {
             font-size: 18px;             
         }

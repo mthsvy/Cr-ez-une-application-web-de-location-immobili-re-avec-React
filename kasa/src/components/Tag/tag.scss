@@ -5,9 +5,9 @@
     min-width: 84px; /* Utilisation de min-width pour éviter les coupures brutales */
     height: 25px;
     border-radius: 10px;
-    margin: 5px; /* Espace entre les éléments */
     text-align: center; /* Centre le texte horizontalement */
     display: flex;
     align-items: center; /* Centre le texte verticalement */
     justify-content: center; /* Centre le texte horizontalement */
+    padding: 0 15px;
 }

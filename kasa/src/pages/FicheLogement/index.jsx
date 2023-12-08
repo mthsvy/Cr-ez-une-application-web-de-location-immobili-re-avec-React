@@ -9,7 +9,7 @@ import Avatar from "../../components/Avatar";
 function FicheLogement() {
   const params = useParams();
   const logement = logements.find((element) => element.id === params.id);
-  if (logement == null) {
+  if (logement === null) {
     return <Navigate to="/not-found" />;
   }
   return (
